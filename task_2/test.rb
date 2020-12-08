@@ -12,9 +12,9 @@ puts "Given: #{array}"
 array.rebuild! do |element|
   element + 3
 end
-puts 'Test 1:', array
+pp 'Test 1:', array
 
 array.rebuild! do |element, size|
   element + size
 end
-puts 'Test 2:', array
+pp 'Test 2:', array
