@@ -18,3 +18,13 @@ array.rebuild! do |element, size|
   element + size
 end
 pp 'Test 2:', array
+
+array.rebuild! do |element, r|
+  element + 1
+end
+pp 'Test 3:', array
+
+array.rebuild! do |element, size, all|
+  element + size + all
+end
+pp 'Test 4:', array
